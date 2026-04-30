@@ -32,15 +32,12 @@ A aplicação suporta a execução dos seguintes modelos de reconhecimento de im
 
 ## Como Executar
 ### Pré-requisitos
-Certifique-se de ter o Python 3.8+ instalado e as bibliotecas necessárias. Você pode instalá-las usando o seguinte comando:
+Certifique-se de ter o Python 3.12+ instalado e as bibliotecas necessárias.
 
-```bash
-pip install -r requirements.txt
-```
 
 ### Inicialização
 Você pode iniciar o projeto usando o seguinte comando:
 
 ```bash
-python index_gui.py
+python src/ai_image_recognition_hub/index_gui.py
 ```

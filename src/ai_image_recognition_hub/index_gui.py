@@ -7,7 +7,7 @@ from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
 import sys
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"assets\frame0")
+ASSETS_PATH = OUTPUT_PATH / Path(r"../../assets\frame0")
 
 
 def relative_to_assets(path: str) -> Path:
@@ -17,7 +17,7 @@ def relative_to_assets(path: str) -> Path:
 def open_other_page(model_name):
     # Executa o arquivo da outra página, passando o nome do modelo como argumento
     venv_python = Path(sys.executable)  # Usa o Python atual do ambiente virtual
-    subprocess.run([venv_python, "model_gui.py", model_name])
+    subprocess.run([venv_python, "src/ai_image_recognition_hub/model_gui.py", model_name])
     print(f'Button {model_name} clicked')
 
 
